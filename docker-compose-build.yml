@@ -16,3 +16,5 @@ services:
     build:
       context: ./udagram-frontend
     image: udagram-frontend:local
+      docker image prune --all
+      docker-compose -f docker-compose-build.yaml build --parallel
